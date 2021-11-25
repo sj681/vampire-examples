@@ -1,0 +1,51 @@
+18-11-2021 [18:40:37] Logfile opened
+18-11-2021 [18:40:37] Executable : vampire-serial
+18-11-2021 [18:40:37] Host name  : SarahsMBP13inch:
+18-11-2021 [18:40:37] Directory  : /Users/sarahjenkins/Documents/work/vampire-jairo/2_Py
+18-11-2021 [18:40:37] Process ID : 1135
+18-11-2021 [18:40:37] Version    : 6.0.0
+18-11-2021 [18:40:37] Githash    : 884a45d9011d90115691f19fb131379d41eeecb3
+18-11-2021 [18:40:37] Opening main input file "input".
+18-11-2021 [18:40:37] Parsing system parameters from main input file.
+18-11-2021 [18:40:37] Opening material file "Py.mat".
+18-11-2021 [18:40:37] Parsing material file for parameters.
+18-11-2021 [18:40:37] Warning: Keyword 'alloy-host' is deprecated and may be removed in a future release. Please use 'host-alloy' instead.
+18-11-2021 [18:40:37] Generating neighbour interactions for a lattice of 3 x 3 x 3 unit cells for neighbour calculation
+18-11-2021 [18:40:37] Calculating alloy properties of system
+18-11-2021 [18:40:37] Determining atomic composition:
+18-11-2021 [18:40:37] Material 1 Ni makes up 79.4 % of all atoms ( 3176 atoms )
+18-11-2021 [18:40:37] Material 2 Fe makes up 20.6 % of all atoms ( 824 atoms )
+18-11-2021 [18:40:37] Memory required for neighbourlist calculation:0.032 MB
+18-11-2021 [18:40:37] Allocating memory for supercell array in neighbourlist calculation
+18-11-2021 [18:40:37] 	Allocating memory done
+18-11-2021 [18:40:37] Populating supercell array for neighbourlist calculation...
+18-11-2021 [18:40:37] 	Populating supercell array completed
+18-11-2021 [18:40:37] Memory required for neighbour list:0.384 MB
+18-11-2021 [18:40:37] Generating neighbour list...
+18-11-2021 [18:40:37] 	Neighbour list calculation complete
+18-11-2021 [18:40:37] Deallocating supercell array for neighbour list calculation
+18-11-2021 [18:40:37] 	Supercell array deallocated
+18-11-2021 [18:40:37] Copying system data to optimised data structures.
+18-11-2021 [18:40:37] Number of atoms generated on rank 0: 4000
+18-11-2021 [18:40:37] Memory required for copying to performance array on rank 0: 0.608 MB RAM
+18-11-2021 [18:40:37] Identifying surface atoms using global threshold value of 12
+18-11-2021 [18:40:37] 0 surface atoms found.
+18-11-2021 [18:40:37] Memory required for creation of 1D neighbour list on rank 0: 0.064 MB RAM
+18-11-2021 [18:40:37] Initialising data structures for exchange calculation.
+18-11-2021 [18:40:37] Unrolled exchange template requires 0.384MB RAM
+18-11-2021 [18:40:37] Number of atoms generated: 4000
+18-11-2021 [18:40:37] Initializing vampire modules
+18-11-2021 [18:40:37] Macrocell size = 10,10,10 Angstroms
+18-11-2021 [18:40:37] Macrocells in x,y,z: 3	3	3
+18-11-2021 [18:40:37] Total number of macrocells: 27
+18-11-2021 [18:40:37] Memory required for macrocell arrays: 0.00216 MB
+18-11-2021 [18:40:37] Number of local macrocells on rank 0: 8
+18-11-2021 [18:40:37] Initialising data structures for anisotropy calculation for 100 materials
+18-11-2021 [18:40:37] Initialising statistics module
+18-11-2021 [18:40:37] Starting Simulation with Program Field-Cool...
+18-11-2021 [23:44:36] Simulation run time [s]: 684.569
+18-11-2021 [23:44:36] Monte Carlo statistics:
+18-11-2021 [23:44:36] 	Total moves: 4e+09
+18-11-2021 [23:44:36] 	62.4538% Accepted
+18-11-2021 [23:44:36] 	37.5462% Rejected
+18-11-2021 [23:44:36] Simulation ended gracefully.

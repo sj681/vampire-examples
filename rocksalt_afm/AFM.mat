@@ -1,0 +1,31 @@
+#===================================================
+# Sample vampire material file V5
+#===================================================
+
+#---------------------------------------------------
+# Number of Materials
+#---------------------------------------------------
+material:num-materials=2
+#---------------------------------------------------
+# Material 1 sublattice 1
+#---------------------------------------------------
+material[1]:material-name=generic
+material[1]:damping-constant=1
+material[1]:exchange-matrix[1]=0.0
+material[1]:exchange-matrix[2]=-3.4e-21 
+material[1]:atomic-spin-moment=2.6 !muB
+material[1]:material-element=Ag
+material[1]:initial-spin-direction = 0,0,1
+material[1]:second-order-uniaxial-anisotropy-constant=1.0e-24
+
+#---------------------------------------------------
+# Material 2 sublattice 2
+#---------------------------------------------------
+material[2]:material-name=generic
+material[2]:damping-constant=1
+material[2]:exchange-matrix[1]=-3.4e-21
+material[2]:exchange-matrix[2]=0.0
+material[2]:atomic-spin-moment=2.6 !muB
+material[2]:material-element=Ag
+material[2]:initial-spin-direction =0,0,-1
+material[2]:second-order-uniaxial-anisotropy-constant=1.0e-24

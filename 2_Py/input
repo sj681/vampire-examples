@@ -1,0 +1,45 @@
+#------------------------------------------
+# Vampire input file for field-cooling
+#------------------------------------------
+# Creation attributes
+#------------------------------------------
+dimensions:unit-cell-size = 2 !A
+dimensions:system-size-x = 2 !nm
+dimensions:system-size-y = 2 !nm
+dimensions:system-size-z = 2 !nm
+
+create:periodic-boundaries-x
+create:periodic-boundaries-y
+create:periodic-boundaries-z
+
+create:crystal-structure=fcc
+
+#------------------------------------------
+# Material files:
+#------------------------------------------
+material:file = Py.mat
+
+#------------------------------------------
+# Simulation attributes
+#------------------------------------------
+sim:integrator = monte-carlo
+sim:program = field-cool
+
+#------------------------------------------
+# Setting 
+#------------------------------------------
+
+sim:total-time-steps=1000000
+
+sim:minimum-temperature=0
+sim:maximum-temperature=1000
+sim:cooling-time= 1!ns
+sim:cooling-function = linear
+
+#-----------------------------------------
+# Data output
+#-----------------------------------------
+output:temperature
+output:material-magnetisation
+screen:temperature
+screen:material-magnetisation
