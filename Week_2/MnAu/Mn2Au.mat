@@ -1,0 +1,58 @@
+#------------------------------------------
+# Sample vampire material file to perform
+# a simulation for Mn2Au.
+# Provided as part of the INSPIRE group
+# VAMPIRE workshop.
+#
+# Dr. Sarah Jenkins
+# TWIST Group, University Duisburg-Essen
+#
+# Tobias Wagner
+# INSPIRE Group, University Mainz
+#
+# November 2021
+#------------------------------------------
+
+#---------------------------------------------------
+# Number of Materials
+#---------------------------------------------------
+material:num-materials=3
+
+#---------------------------------------------------
+# Material 1-3 Mn2Au
+#---------------------------------------------------
+
+material[1]:material-name="Mn"
+material[1]:damping-constant=1.0
+material[1]:atomic-spin-moment=4.0 !muB
+material[1]:material-element="Mn"
+material[1]:density = 1.00
+material[1]:initial-spin-direction=0,1,0
+material[1]:exchange-matrix[1] = 1.469234e-20
+material[1]:exchange-matrix[2] = 1.469234e-20, 1.469234e-20, 1.459319e-20
+material[1]:unit-cell-category = 1
+material[1]:fourth-order-uniaxial-anisotropy-constant   = 1.602e-24 #k4perp
+material[1]:fourth-order-rotational-anisotropy-constant = -8.010e-25 #k4para
+material[1]:unit-cell-category = 1
+material[1]:temperature-rescaling-exponent=2.0
+material[1]:temperature-rescaling-curie-temperature=1256 #temperature-rescaling
+material[1]:domain-wall-second-magnetisation-vector = 1,0,0
+
+material[2]:material-name="Mn"
+material[2]:damping-constant=1.0
+material[2]:atomic-spin-moment=4.0 !muB
+material[2]:material-element="Mn"
+material[2]:density = 1.00
+material[2]:initial-spin-direction=0,-1,0
+material[2]:exchange-matrix[1] =1.469234e-20, 1.469234e-20, 1.459319e-20
+material[2]:exchange-matrix[2] =1.469234e-20
+material[2]:fourth-order-uniaxial-anisotropy-constant = 1.602e-24  #k4para
+material[2]:fourth-order-rotational-anisotropy-constant = -8.01e-25 #k4perp
+material[2]:unit-cell-category = 2
+material[2]:temperature-rescaling-exponent=2.0
+material[2]:temperature-rescaling-curie-temperature=1256 #temperature-rescaling
+material[2]:domain-wall-second-magnetisation-vector = -1,0,0
+
+material[3]:material-name="Au"
+material[3]:non-magnetic=remove
+material[3]:unit-cell-category = 3
