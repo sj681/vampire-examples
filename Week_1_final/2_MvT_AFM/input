@@ -1,0 +1,55 @@
+#------------------------------------------
+# Sample vampire input file to perform
+# a Curie temperature simulation for AFM.
+# Provided as part of the INSPIRE group
+# VAMPIRE workshop.
+#
+# Dr. Sarah Jenkins
+# TWIST Group, University Duisburg-Essen
+#
+# Tobias Wagner
+# INSPIRE Group, University Mainz
+#
+# November 2021
+#------------------------------------------
+create:crystal-structure = rocksalt
+
+#------------------------------------------
+# Creation attributes:
+#------------------------------------------
+dimensions:unit-cell-size = 3.66 !A
+
+dimensions:system-size-x = 2 !nm
+dimensions:system-size-y = 2 !nm
+dimensions:system-size-z = 2 !nm
+
+#------------------------------------------
+# Material Files:
+#------------------------------------------
+material:file = AFM.mat
+
+#------------------------------------------
+# Simulation attributes:
+#------------------------------------------
+
+sim:minimum-temperature=0.0
+sim:maximum-temperature=1000
+sim:temperature-increment=25
+sim:loop-time-steps=10000
+
+#------------------------------------------
+# Program and integrator details
+#------------------------------------------
+sim:program = curie-temperature
+sim:integrator = monte-carlo
+
+#------------------------------------------
+# data output
+#------------------------------------------
+output:temperature
+output:time-steps
+output:material-magnetisation
+output:material-mean-magnetisation-length
+
+screen:temperature
+screen:material-magnetisation

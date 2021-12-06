@@ -1,0 +1,100 @@
+05-12-2021 [18:44:35] Logfile opened
+05-12-2021 [18:44:35] Executable : vampire-parallel
+05-12-2021 [18:44:35] Host name  : Sarahs-MacBook-Pro13inch.local:
+05-12-2021 [18:44:35] Directory  : /Users/sarahjenkins/Documents/work/vampire-workshop-mainz/vampire-examples/Week_2_final/1_Ni_skyrmion
+05-12-2021 [18:44:35] Process ID : 63048
+05-12-2021 [18:44:35] Version    : 6.0.0
+05-12-2021 [18:44:35] Githash    : 74f299f7e8a8a31551de2f4dbb48d0538baf8469
+05-12-2021 [18:44:35] Opening main input file "input".
+05-12-2021 [18:44:35] Parsing system parameters from main input file.
+05-12-2021 [18:44:35] Opening material file "Ni.mat".
+05-12-2021 [18:44:35] Parsing material file for parameters.
+05-12-2021 [18:44:35] Generating neighbour interactions for a lattice of 5 x 5 x 5 unit cells for neighbour calculation
+05-12-2021 [18:44:35] System decomposed into 2 x 2 x 1 processors for parallel execution
+05-12-2021 [18:44:35] Calculating alloy properties of system
+05-12-2021 [18:44:35] Determining atomic composition:
+05-12-2021 [18:44:35] Material 1 Co makes up 50 % of all atoms ( 400 atoms )
+05-12-2021 [18:44:35] Material 2 Pt makes up 50 % of all atoms ( 400 atoms )
+05-12-2021 [18:44:35] Copying halo atoms to other processors...
+05-12-2021 [18:44:35]    Determining CPU ranges in x,y,z
+05-12-2021 [18:44:35]      Completed. Time taken: 1.5858e-05 s
+05-12-2021 [18:44:35]    Determining atoms needed by remote CPUs
+05-12-2021 [18:44:35]      Completed. Time taken: 0.000816536 s
+05-12-2021 [18:44:35]    Sharing number of atoms to be sent/received from each CPU
+05-12-2021 [18:44:35]      Completed. Time taken: 6.6649e-05 s
+05-12-2021 [18:44:35]    Sending boundary atom data to all relevant CPUs
+05-12-2021 [18:44:35]      Completed. Time taken: 0.00134831 s
+05-12-2021 [18:44:35] 	done! Total time taken: 0.00238447
+05-12-2021 [18:44:35] Memory required for neighbourlist calculation (each cpu):0 MB
+05-12-2021 [18:44:35] Memory required for neighbourlist calculation (all cpus):0 MB
+05-12-2021 [18:44:35] Allocating memory for supercell array in neighbourlist calculation
+05-12-2021 [18:44:35] 	Allocating memory done
+05-12-2021 [18:44:35] Populating supercell array for neighbourlist calculation...
+05-12-2021 [18:44:35] 	Populating supercell array completed
+05-12-2021 [18:44:35] Memory required for neighbour list (each cpu):0 MB
+05-12-2021 [18:44:35] Memory required for neighbour list (all cpus):0 MB
+05-12-2021 [18:44:35] Generating neighbour list...
+05-12-2021 [18:44:35] 	Neighbour list calculation complete
+05-12-2021 [18:44:35] Deallocating supercell array for neighbour list calculation
+05-12-2021 [18:44:35] 	Supercell array deallocated
+05-12-2021 [18:44:35] Number of core  atoms: 128
+05-12-2021 [18:44:35] Number of local atoms: 200
+05-12-2021 [18:44:35] Number of total atoms: 280
+05-12-2021 [18:44:35] Initialising MPI communications...
+05-12-2021 [18:44:35] 	done! Total time taken: 0.000208363
+05-12-2021 [18:44:35] Copying system data to optimised data structures.
+05-12-2021 [18:44:35] Number of atoms generated on rank 0: 200
+05-12-2021 [18:44:35] Memory required for copying to performance array on rank 0: 0.04256 MB RAM
+05-12-2021 [18:44:35] Identifying surface atoms using global threshold value of 6
+05-12-2021 [18:44:35] 200 surface atoms found.
+05-12-2021 [18:44:35] Memory required for creation of 1D neighbour list on rank 0: 0.00448 MB RAM
+05-12-2021 [18:44:35] Initialising data structures for exchange calculation.
+05-12-2021 [18:44:35] Unrolled exchange template requires 0.072MB RAM
+05-12-2021 [18:44:35] Calculating Dzyaloshinskii-Moriya interactions
+05-12-2021 [18:44:35] Total number of atoms (all CPUs): 800
+05-12-2021 [18:44:35] Initializing vampire modules
+05-12-2021 [18:44:35] Macrocell size = 10,10,10 Angstroms
+05-12-2021 [18:44:35] Macrocells in x,y,z: 3	3	1
+05-12-2021 [18:44:35] Total number of macrocells: 9
+05-12-2021 [18:44:35] Memory required for macrocell arrays: 0.00072 MB
+05-12-2021 [18:44:35] Number of local macrocells on rank 0: 1
+05-12-2021 [18:44:35] Initialising data structures for anisotropy calculation for 100 materials
+05-12-2021 [18:44:35] Initialising statistics module
+05-12-2021 [18:44:35] Time for initialisation: 0.006723
+05-12-2021 [18:44:35] Starting Simulation with Program Field-Cool...
+05-12-2021 [18:44:35] Initialising configuration output... done!
+05-12-2021 [18:44:35] Total coordinate data filesize: 0.0384 MB
+05-12-2021 [18:44:35] Total spin data filesize (per snapshot): 0.0192 MB
+05-12-2021 [18:44:35] Outputting atomic coordinate file to disk 0.0482269 GB/s in 0.000796236 s
+05-12-2021 [18:44:35] Outputting configuration file 00000000 to disk 0.0141393 GB/s in 0.00135791 s [ 0.00228896 s]
+05-12-2021 [18:44:39] Outputting configuration file 00000001 to disk 0.017113 GB/s in 0.00112195 s [ 0.00174259 s]
+05-12-2021 [18:44:43] Outputting configuration file 00000002 to disk 0.018799 GB/s in 0.00102133 s [ 0.00161899 s]
+05-12-2021 [18:44:46] Outputting configuration file 00000003 to disk 0.0266029 GB/s in 0.000721726 s [ 0.00113695 s]
+05-12-2021 [18:44:49] Outputting configuration file 00000004 to disk 0.0225983 GB/s in 0.00084962 s [ 0.0014691 s]
+05-12-2021 [18:44:52] Outputting configuration file 00000005 to disk 0.0261001 GB/s in 0.000735628 s [ 0.00127138 s]
+05-12-2021 [18:44:55] Outputting configuration file 00000006 to disk 0.0200694 GB/s in 0.000956679 s [ 0.00150903 s]
+05-12-2021 [18:44:58] Outputting configuration file 00000007 to disk 0.0230065 GB/s in 0.000834547 s [ 0.00173551 s]
+05-12-2021 [18:45:03] Outputting configuration file 00000008 to disk 0.0221644 GB/s in 0.000866255 s [ 0.00151166 s]
+05-12-2021 [18:45:08] Outputting configuration file 00000009 to disk 0.0150475 GB/s in 0.00127596 s [ 0.00198102 s]
+05-12-2021 [18:45:12] Outputting configuration file 00000010 to disk 0.0246056 GB/s in 0.000780309 s [ 0.00133088 s]
+05-12-2021 [18:45:15] Outputting configuration file 00000011 to disk 0.0250319 GB/s in 0.000767022 s [ 0.00130392 s]
+05-12-2021 [18:45:19] Outputting configuration file 00000012 to disk 0.0164185 GB/s in 0.00116941 s [ 0.00176309 s]
+05-12-2021 [18:45:22] Outputting configuration file 00000013 to disk 0.0234572 GB/s in 0.000818512 s [ 0.00137138 s]
+05-12-2021 [18:45:26] Outputting configuration file 00000014 to disk 0.0176194 GB/s in 0.00108971 s [ 0.00175759 s]
+05-12-2021 [18:45:29] Outputting configuration file 00000015 to disk 0.0209772 GB/s in 0.00091528 s [ 0.00159821 s]
+05-12-2021 [18:45:33] Outputting configuration file 00000016 to disk 0.0249036 GB/s in 0.000770972 s [ 0.00135814 s]
+05-12-2021 [18:45:36] Outputting configuration file 00000017 to disk 0.0235589 GB/s in 0.000814979 s [ 0.00147377 s]
+05-12-2021 [18:45:40] Outputting configuration file 00000018 to disk 0.0151581 GB/s in 0.00126665 s [ 0.00310496 s]
+05-12-2021 [18:45:44] Outputting configuration file 00000019 to disk 0.0242542 GB/s in 0.000791616 s [ 0.00141822 s]
+05-12-2021 [18:45:47] Outputting configuration file 00000020 to disk 0.0232856 GB/s in 0.000824544 s [ 0.00149199 s]
+05-12-2021 [18:45:50] Outputting configuration file 00000021 to disk 0.021138 GB/s in 0.000908315 s [ 0.00146831 s]
+05-12-2021 [18:45:53] Outputting configuration file 00000022 to disk 0.0216279 GB/s in 0.000887741 s [ 0.0014696 s]
+05-12-2021 [18:45:57] Outputting configuration file 00000023 to disk 0.0249534 GB/s in 0.000769435 s [ 0.00126439 s]
+05-12-2021 [18:46:00] Outputting configuration file 00000024 to disk 0.0242762 GB/s in 0.000790897 s [ 0.00147409 s]
+05-12-2021 [18:46:03] Outputting configuration file 00000025 to disk 0.0218376 GB/s in 0.000879219 s [ 0.00142108 s]
+05-12-2021 [18:46:06] Outputting configuration file 00000026 to disk 0.0214494 GB/s in 0.000895129 s [ 0.0015657 s]
+05-12-2021 [18:46:10] Outputting configuration file 00000027 to disk 0.0245776 GB/s in 0.0007812 s [ 0.00132879 s]
+05-12-2021 [18:46:13] Outputting configuration file 00000028 to disk 0.024844 GB/s in 0.000772821 s [ 0.00133539 s]
+05-12-2021 [18:46:16] Outputting configuration file 00000029 to disk 0.0247317 GB/s in 0.000776331 s [ 0.00133969 s]
+05-12-2021 [18:46:20] Simulation run time [s]: 104.88
+05-12-2021 [18:46:20] Simulation ended gracefully.

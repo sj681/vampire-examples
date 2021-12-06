@@ -1,0 +1,52 @@
+#------------------------------------------
+# Sample vampire material file to perform
+# a Curie temperature simulation for Co.
+# Provided as part of the INSPIRE group
+# VAMPIRE workshop.
+#
+# Dr. Sarah Jenkins
+# TWIST Group, University Duisburg-Essen
+#
+# Tobias Wagner
+# INSPIRE Group, University Mainz
+#
+# November 2021
+#------------------------------------------
+
+#---------------------------------------------------
+# Number of Materials
+#---------------------------------------------------
+material:num-materials=1
+#---------------------------------------------------
+# Material 1 Co Generic
+# Parameters available from 
+# https://doi.org/10.1088%2F0953-8984%2F26%2F10%2F103202
+#---------------------------------------------------
+material[1]:material-name=RL
+material[1]:damping-constant=0.003
+material[1]:exchange-matrix[1]=7.735e-21
+material[1]:atomic-spin-moment=1.6 !muB
+material[1]:uniaxial-anisotropy-direction = 0,0,1
+material[1]:material-element=Co
+material[1]:initial-spin-direction=0,0,1
+material[1]:minimum-height = 0
+material[1]:maximum-height = 0.51
+
+
+
+material[2]:material-name=Mg0
+material[2]:non-magnetic=remove
+material[2]:material-element=Co
+material[2]:minimum-height = 0.51
+material[2]:maximum-height = 0.676767
+
+
+material[3]:material-name=FL
+material[3]:damping-constant=0.003
+material[3]:exchange-matrix[3]=7.735e-21
+material[3]:atomic-spin-moment=1.6 !muB
+material[3]:uniaxial-anisotropy-direction = 0,0,1
+material[3]:material-element=Co
+material[3]:initial-spin-direction=0,0,1
+material[3]:minimum-height = 0.676767
+material[3]:maximum-height = 1.0

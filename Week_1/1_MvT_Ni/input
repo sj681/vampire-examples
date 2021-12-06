@@ -2,6 +2,7 @@
 # Sample vampire input file to perform
 # a Curie temperature simulation for Ni.
 # Provided as part of the INSPIRE group
+# Taken from https://vampire.york.ac.uk/workshop/
 # VAMPIRE workshop.
 #
 # Dr. Sarah Jenkins
@@ -16,17 +17,16 @@
 #------------------------------------------
 # Creation attributes:
 #------------------------------------------
-create:crystal-structure=fcc
-create:periodic-boundaries-x
-create:periodic-boundaries-y
-create:periodic-boundaries-z
+create:crystal-structure=XX
+dimensions:unit-cell-size = XX !A
+
 #------------------------------------------
 # System Dimensions:
 #------------------------------------------
-dimensions:unit-cell-size = 3.524 !A
-dimensions:system-size-x = 4.0 !nm
-dimensions:system-size-y = 4.0 !nm
-dimensions:system-size-z = 4.0 !nm
+
+dimensions:system-size-x = XX !nm
+dimensions:system-size-y = XX !nm
+dimensions:system-size-z = XX !nm
 
 #------------------------------------------
 # Material Files:
@@ -36,28 +36,24 @@ material:file=Ni.mat
 #------------------------------------------
 # Simulation attributes:
 #------------------------------------------
-sim:temperature=300.0
-sim:minimum-temperature=000
-sim:maximum-temperature=800
+
+sim:minimum-temperature=0
+sim:maximum-temperature=XX
 sim:temperature-increment=25
-sim:time-steps-increment=1
-sim:equilibration-time-steps=10000
-sim:loop-time-steps=10000
-sim:time-step=1.0E-15
+sim:loop-time-steps=50000
 
 #------------------------------------------
 # Program and integrator details
 #------------------------------------------
 sim:program=curie-temperature
-sim:integrator=monte-carlo
+sim:integrator=XX
 
 #------------------------------------------
 # data output
 #------------------------------------------
 output:time-steps
 output:temperature
-output:magnetisation
-output:mean-magnetisation-length
+output:material-mean-magnetisation
 
 screen:temperature
-screen:mean-magnetisation-length
+screen:material-mean-magnetisation

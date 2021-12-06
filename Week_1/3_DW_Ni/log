@@ -1,0 +1,55 @@
+25-11-2021 [14:11:43] Logfile opened
+25-11-2021 [14:11:43] Executable : vampire-serial
+25-11-2021 [14:11:43] Host name  : Sarahs-MacBook-Pro13inch.local:
+25-11-2021 [14:11:43] Directory  : /Users/sarahjenkins/Documents/work/vampire-workshop-mainz/vampire-examples/Week_1/3_DW_Ni
+25-11-2021 [14:11:43] Process ID : 6475
+25-11-2021 [14:11:43] Version    : 6.0.0
+25-11-2021 [14:11:43] Githash    : 884a45d9011d90115691f19fb131379d41eeecb3
+25-11-2021 [14:11:43] Opening main input file "input".
+25-11-2021 [14:11:43] Parsing system parameters from main input file.
+25-11-2021 [14:11:43] Opening material file "Ni.mat".
+25-11-2021 [14:11:43] Parsing material file for parameters.
+25-11-2021 [14:11:43] Generating neighbour interactions for a lattice of 3 x 3 x 3 unit cells for neighbour calculation
+25-11-2021 [14:11:43] Calculating alloy properties of system
+25-11-2021 [14:11:43] Determining atomic composition:
+25-11-2021 [14:11:43] Material 1 Ni makes up 100 % of all atoms ( 5112 atoms )
+25-11-2021 [14:11:43] Memory required for neighbourlist calculation:0.040896 MB
+25-11-2021 [14:11:43] Allocating memory for supercell array in neighbourlist calculation
+25-11-2021 [14:11:43] 	Allocating memory done
+25-11-2021 [14:11:43] Populating supercell array for neighbourlist calculation...
+25-11-2021 [14:11:43] 	Populating supercell array completed
+25-11-2021 [14:11:43] Memory required for neighbour list:0.490752 MB
+25-11-2021 [14:11:43] Generating neighbour list...
+25-11-2021 [14:11:43] 	Neighbour list calculation complete
+25-11-2021 [14:11:43] Deallocating supercell array for neighbour list calculation
+25-11-2021 [14:11:43] 	Supercell array deallocated
+25-11-2021 [14:11:43] Copying system data to optimised data structures.
+25-11-2021 [14:11:43] Number of atoms generated on rank 0: 5112
+25-11-2021 [14:11:43] Memory required for copying to performance array on rank 0: 0.777024 MB RAM
+25-11-2021 [14:11:43] Identifying surface atoms using global threshold value of 12
+25-11-2021 [14:11:43] 36 surface atoms found.
+25-11-2021 [14:11:43] Memory required for creation of 1D neighbour list on rank 0: 0.081792 MB RAM
+25-11-2021 [14:11:43] Initialising data structures for exchange calculation.
+25-11-2021 [14:11:43] Unrolled exchange template requires 0.4896MB RAM
+25-11-2021 [14:11:43] Number of atoms generated: 5112
+25-11-2021 [14:11:43] Initializing vampire modules
+25-11-2021 [14:11:43] Macrocell size = 10,10,10 Angstroms
+25-11-2021 [14:11:43] Macrocells in x,y,z: 51	2	2
+25-11-2021 [14:11:43] Total number of macrocells: 204
+25-11-2021 [14:11:43] Memory required for macrocell arrays: 0.01632 MB
+25-11-2021 [14:11:43] Number of local macrocells on rank 0: 50
+25-11-2021 [14:11:43] Initialising data structures for anisotropy calculation for 100 materials
+25-11-2021 [14:11:43] Initialising statistics module
+25-11-2021 [14:11:43] Starting Simulation with Program Domain walls...
+25-11-2021 [14:11:44] Initialising configuration output... done!
+25-11-2021 [14:11:44] Total coordinate data filesize: 0.245376 MB
+25-11-2021 [14:11:44] Total spin data filesize (per snapshot): 0.122688 MB
+25-11-2021 [14:11:44] Outputting atomic coordinate file to disk 0.019437 GB/s in 0.0126242 s
+25-11-2021 [14:11:44] Outputting configuration file 00000000 to disk 0.0145465 GB/s in 0.00843418 s [ 0.0090396 s]
+25-11-2021 [14:11:57] Simulation run time [s]: 13.8049
+25-11-2021 [14:11:57] Monte Carlo statistics:
+25-11-2021 [14:11:57] 	Total moves: 5.112e+07
+25-11-2021 [14:11:57] 	4.12534% Accepted
+25-11-2021 [14:11:57] 	95.8747% Rejected
+25-11-2021 [14:11:57] Checkpoint file written to disk.
+25-11-2021 [14:11:57] Simulation ended gracefully.

@@ -1,0 +1,47 @@
+#------------------------------------------
+# Sample vampire material file to perform
+# a Curie temperature simulation for Ni.
+# Provided as part of the INSPIRE group
+# VAMPIRE workshop.
+#
+# Dr. Sarah Jenkins
+# TWIST Group, University Duisburg-Essen
+#
+# Tobias Wagner
+# INSPIRE Group, University Mainz
+#
+# November 2021
+#------------------------------------------
+
+#---------------------------------------------------
+# Number of Materials
+#---------------------------------------------------
+material:num-materials=2
+#---------------------------------------------------
+# Material 1 sublattice 1
+#---------------------------------------------------
+material[1]:material-name=generic
+material[1]:damping-constant=1
+material[1]:exchange-matrix[1]=0.0
+material[1]:exchange-matrix[2]=-6.4e-21 
+material[1]:atomic-spin-moment=2.6 !muB
+material[1]:material-element=Ag
+material[1]:initial-spin-direction = 0,0,1
+material[1]:second-order-uniaxial-anisotropy-constant=1.0e-23
+material[1]:uniaxial-anisotropy-direction = 0,0,1
+material[1]:domain-wall-second-magnetisation-vector = 0,0,-1
+material[1]:unit-cell-category = 1
+#---------------------------------------------------
+# Material 2 sublattice 2
+#---------------------------------------------------
+material[2]:material-name=generic
+material[2]:damping-constant=1
+material[2]:exchange-matrix[1]=-6.4e-21
+material[2]:exchange-matrix[2]=0.0
+material[2]:atomic-spin-moment=2.6 !muB
+material[2]:material-element=Ag
+material[2]:initial-spin-direction =0,0,-1
+material[2]:second-order-uniaxial-anisotropy-constant=1.0e-23
+material[2]:uniaxial-anisotropy-direction = 0,0,1
+material[2]:domain-wall-second-magnetisation-vector = 0,0,1
+material[2]:unit-cell-category = 2

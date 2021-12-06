@@ -1,0 +1,58 @@
+#------------------------------------------
+# Sample vampire input file to perform
+# a Curie temperature simulation for Ni.
+# Provided as part of the INSPIRE group
+# Taken from https://vampire.york.ac.uk/workshop/
+# VAMPIRE workshop.
+#
+# Dr. Sarah Jenkins
+# TWIST Group, University Duisburg-Essen
+#
+# Tobias Wagner
+# INSPIRE Group, University Mainz
+#
+# November 2021
+#------------------------------------------
+
+#------------------------------------------
+# Creation attributes:
+#------------------------------------------
+create:crystal-structure=fcc
+#------------------------------------------
+# System Dimensions:
+#------------------------------------------
+dimensions:unit-cell-size = 3.524 !A
+dimensions:system-size-x = 4.0 !nm
+dimensions:system-size-y = 4.0 !nm
+dimensions:system-size-z = 4.0 !nm
+
+#------------------------------------------
+# Material Files:
+#------------------------------------------
+material:file=Ni.mat
+
+#------------------------------------------
+# Simulation attributes:
+#------------------------------------------
+sim:minimum-temperature=000
+sim:maximum-temperature=800
+sim:temperature-increment=25
+sim:time-steps-increment=1
+sim:loop-time-steps=10000
+sim:time-step=1.0E-15
+
+#------------------------------------------
+# Program and integrator details
+#------------------------------------------
+sim:program=curie-temperature
+sim:integrator=monte-carlo
+
+#------------------------------------------
+# data output
+#------------------------------------------
+output:time-steps
+output:temperature
+output:material-magnetisation
+
+screen:temperature
+screen:material-magnetisation

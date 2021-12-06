@@ -1,0 +1,74 @@
+05-12-2021 [16:41:35] Logfile opened
+05-12-2021 [16:41:35] Executable : vampire-parallel
+05-12-2021 [16:41:35] Host name  : Sarahs-MacBook-Pro13inch.local:
+05-12-2021 [16:41:35] Directory  : /Users/sarahjenkins/Documents/work/vampire-workshop-mainz/vampire-examples/Week_1_final/4_DW_AFM
+05-12-2021 [16:41:35] Process ID : 61904
+05-12-2021 [16:41:35] Version    : 6.0.0
+05-12-2021 [16:41:35] Githash    : 74f299f7e8a8a31551de2f4dbb48d0538baf8469
+05-12-2021 [16:41:35] Opening main input file "input".
+05-12-2021 [16:41:35] Parsing system parameters from main input file.
+05-12-2021 [16:41:35] Opening material file "AFM.mat".
+05-12-2021 [16:41:35] Parsing material file for parameters.
+05-12-2021 [16:41:35] Generating neighbour interactions for a lattice of 3 x 3 x 3 unit cells for neighbour calculation
+05-12-2021 [16:41:35] System decomposed into 4 x 1 x 1 processors for parallel execution
+05-12-2021 [16:41:35] Calculating alloy properties of system
+05-12-2021 [16:41:35] Determining atomic composition:
+05-12-2021 [16:41:35] Material 1 generic makes up 50 % of all atoms ( 10224 atoms )
+05-12-2021 [16:41:35] Material 2 generic makes up 50 % of all atoms ( 10224 atoms )
+05-12-2021 [16:41:35] Copying halo atoms to other processors...
+05-12-2021 [16:41:35]    Determining CPU ranges in x,y,z
+05-12-2021 [16:41:35]      Completed. Time taken: 6.6235e-05 s
+05-12-2021 [16:41:35]    Determining atoms needed by remote CPUs
+05-12-2021 [16:41:35]      Completed. Time taken: 0.0254212 s
+05-12-2021 [16:41:35]    Sharing number of atoms to be sent/received from each CPU
+05-12-2021 [16:41:35]      Completed. Time taken: 2.9006e-05 s
+05-12-2021 [16:41:35]    Sending boundary atom data to all relevant CPUs
+05-12-2021 [16:41:35]      Completed. Time taken: 0.00471863 s
+05-12-2021 [16:41:35] 	done! Total time taken: 0.0330633
+05-12-2021 [16:41:35] Memory required for neighbourlist calculation (each cpu):0 MB
+05-12-2021 [16:41:35] Memory required for neighbourlist calculation (all cpus):0 MB
+05-12-2021 [16:41:35] Allocating memory for supercell array in neighbourlist calculation
+05-12-2021 [16:41:35] 	Allocating memory done
+05-12-2021 [16:41:35] Populating supercell array for neighbourlist calculation...
+05-12-2021 [16:41:35] 	Populating supercell array completed
+05-12-2021 [16:41:35] Memory required for neighbour list (each cpu):0 MB
+05-12-2021 [16:41:35] Memory required for neighbour list (all cpus):0 MB
+05-12-2021 [16:41:35] Generating neighbour list...
+05-12-2021 [16:41:35] 	Neighbour list calculation complete
+05-12-2021 [16:41:35] Deallocating supercell array for neighbour list calculation
+05-12-2021 [16:41:35] 	Supercell array deallocated
+05-12-2021 [16:41:35] Number of core  atoms: 2256
+05-12-2021 [16:41:35] Number of local atoms: 5112
+05-12-2021 [16:41:35] Number of total atoms: 8556
+05-12-2021 [16:41:35] Initialising MPI communications...
+05-12-2021 [16:41:35] 	done! Total time taken: 0.00112166
+05-12-2021 [16:41:35] Copying system data to optimised data structures.
+05-12-2021 [16:41:35] Number of atoms generated on rank 0: 5112
+05-12-2021 [16:41:35] Memory required for copying to performance array on rank 0: 1.30051 MB RAM
+05-12-2021 [16:41:35] Identifying surface atoms using global threshold value of 6
+05-12-2021 [16:41:35] 36 surface atoms found.
+05-12-2021 [16:41:35] Memory required for creation of 1D neighbour list on rank 0: 0.136896 MB RAM
+05-12-2021 [16:41:35] Initialising data structures for exchange calculation.
+05-12-2021 [16:41:35] Unrolled exchange template requires 0.245088MB RAM
+05-12-2021 [16:41:35] Total number of atoms (all CPUs): 20448
+05-12-2021 [16:41:35] Initializing vampire modules
+05-12-2021 [16:41:35] Macrocell size = 10,10,10 Angstroms
+05-12-2021 [16:41:35] Macrocells in x,y,z: 101	2	2
+05-12-2021 [16:41:35] Total number of macrocells: 404
+05-12-2021 [16:41:35] Memory required for macrocell arrays: 0.03232 MB
+05-12-2021 [16:41:35] Number of local macrocells on rank 0: 25
+05-12-2021 [16:41:35] Initialising data structures for anisotropy calculation for 100 materials
+05-12-2021 [16:41:35] Initialising statistics module
+05-12-2021 [16:41:35] Time for initialisation: 0.072091
+05-12-2021 [16:41:35] Starting Simulation with Program Domain walls...
+05-12-2021 [16:41:37] Initialising configuration output... done!
+05-12-2021 [16:41:37] Total coordinate data filesize: 0.981504 MB
+05-12-2021 [16:41:37] Total spin data filesize (per snapshot): 0.490752 MB
+05-12-2021 [16:41:37] Outputting atomic coordinate file to disk 0.0237876 GB/s in 0.0412612 s
+05-12-2021 [16:41:37] Outputting configuration file 00000000 to disk 0.022541 GB/s in 0.0217715 s [ 0.0229736 s]
+05-12-2021 [16:43:38] Simulation run time [s]: 123.287
+05-12-2021 [16:43:38] Monte Carlo statistics:
+05-12-2021 [16:43:38] 	Total moves: 2.0448e+09
+05-12-2021 [16:43:38] 	1.53854% Accepted
+05-12-2021 [16:43:38] 	98.4615% Rejected
+05-12-2021 [16:43:38] Simulation ended gracefully.

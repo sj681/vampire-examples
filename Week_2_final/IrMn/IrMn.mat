@@ -1,0 +1,99 @@
+
+#---------------------------------------------------
+# Number of Materials
+#---------------------------------------------------
+material:num-materials=5
+
+#---------------------------------------------------
+# Material 1-4 IrMn
+#---------------------------------------------------
+
+
+material[1]:material-name="Mn"
+material[1]:damping-constant=0.1
+material[1]:atomic-spin-moment=2.6 !muB
+material[1]:surface-anisotropy-constant[5]=-4.22e-22
+material[1]:material-element="C"
+material[1]:initial-spin-direction=random
+material[1]:exchange-matrix-1st-nn[1] = -6.4e-21
+material[1]:exchange-matrix-1st-nn[2] = -6.4e-21
+material[1]:exchange-matrix-1st-nn[3] = -6.4e-21
+material[1]:exchange-matrix-1st-nn[4] = -6.4e-21
+material[1]:exchange-matrix-2nd-nn[1] = 5.1e-21
+material[1]:exchange-matrix-2nd-nn[2] = 5.1e-21
+material[1]:exchange-matrix-2nd-nn[3] = 5.1e-21
+material[1]:exchange-matrix-2nd-nn[4] = 5.1e-21
+material[1]:unit-cell-category = 1
+material[1]:host-alloy
+material[1]:alloy-fraction[5]= 0.25
+
+
+material[2]:material-name="Mn"
+material[2]:damping-constant=0.1
+material[2]:atomic-spin-moment=2.6 !muB
+material[2]:surface-anisotropy-constant[5]=-4.22e-22
+material[2]:material-element="H"
+material[2]:initial-spin-direction=random
+material[2]:exchange-matrix-1st-nn[1] = -6.4e-21
+material[2]:exchange-matrix-1st-nn[2] = -6.4e-21
+material[2]:exchange-matrix-1st-nn[3] = -6.4e-21
+material[2]:exchange-matrix-1st-nn[4] = -6.4e-21
+material[2]:exchange-matrix-2nd-nn[1] = 5.1e-21
+material[2]:exchange-matrix-2nd-nn[2] = 5.1e-21
+material[2]:exchange-matrix-2nd-nn[3] = 5.1e-21
+material[2]:exchange-matrix-2nd-nn[4] = 5.1e-21
+material[2]:unit-cell-category = 2
+material[2]:constrained = false
+material[2]:host-alloy
+material[2]:alloy-fraction[5]= 0.25
+material[2]:maximum-height = 1.0
+material[2]:minimum-height = 0.05
+
+
+material[3]:material-name="Mn"
+material[3]:damping-constant=0.1
+material[3]:atomic-spin-moment=2.6 !muB
+material[3]:surface-anisotropy-constant[5]=-4.22e-22
+material[3]:material-element="Ag"
+material[3]:initial-spin-direction=random
+material[3]:exchange-matrix-1st-nn[1] = -6.4e-21
+material[3]:exchange-matrix-1st-nn[2] = -6.4e-21
+material[3]:exchange-matrix-1st-nn[3] = -6.4e-21
+material[3]:exchange-matrix-1st-nn[4] = -6.4e-21
+material[3]:exchange-matrix-2nd-nn[1] = 5.1e-21
+material[3]:exchange-matrix-2nd-nn[2] = 5.1e-21
+material[3]:exchange-matrix-2nd-nn[3] = 5.1e-21
+material[3]:exchange-matrix-2nd-nn[4] = 5.1e-21
+material[3]:unit-cell-category = 3
+material[3]:host-alloy
+material[3]:alloy-fraction[5]=0.25
+
+material[4]:material-name="Mn"
+material[4]:damping-constant=0.1
+material[4]:atomic-spin-moment=2.6 !muB
+material[4]:surface-anisotropy-constant[5]=-4.22e-22
+material[4]:material-element="Ag"
+material[4]:initial-spin-direction=random
+material[4]:exchange-matrix-1st-nn[1] = -6.4e-21
+material[4]:exchange-matrix-1st-nn[2] = -6.4e-21
+material[4]:exchange-matrix-1st-nn[3] = -6.4e-21
+material[4]:exchange-matrix-1st-nn[4] = -6.4e-21
+material[4]:exchange-matrix-2nd-nn[1] = 5.1e-21
+material[4]:exchange-matrix-2nd-nn[2] = 5.1e-21
+material[4]:exchange-matrix-2nd-nn[3] = 5.1e-21
+material[4]:exchange-matrix-2nd-nn[4] = 5.1e-21
+material[4]:unit-cell-category = 4
+material[4]:host-alloy
+material[4]:alloy-fraction[5]=0.25
+
+
+
+
+
+#---------------------------------------------------
+# Material Ir
+#---------------------------------------------------
+
+material[5]:material-name="Ir"
+material[5]:non-magnetic=remove
+material[5]:unit-cell-category = 5

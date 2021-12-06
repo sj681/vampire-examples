@@ -1,0 +1,68 @@
+05-12-2021 [16:25:46] Logfile opened
+05-12-2021 [16:25:46] Executable : vampire-parallel
+05-12-2021 [16:25:46] Host name  : Sarahs-MacBook-Pro13inch.local:
+05-12-2021 [16:25:46] Directory  : /Users/sarahjenkins/Documents/work/vampire-workshop-mainz/vampire-examples/Week_1_final/1_MvT_Co
+05-12-2021 [16:25:46] Process ID : 61699
+05-12-2021 [16:25:46] Version    : 6.0.0
+05-12-2021 [16:25:46] Githash    : 74f299f7e8a8a31551de2f4dbb48d0538baf8469
+05-12-2021 [16:25:46] Opening main input file "input".
+05-12-2021 [16:25:46] Parsing system parameters from main input file.
+05-12-2021 [16:25:46] Opening material file "Co.mat".
+05-12-2021 [16:25:46] Parsing material file for parameters.
+05-12-2021 [16:25:46] Generating neighbour interactions for a lattice of 3 x 3 x 3 unit cells for neighbour calculation
+05-12-2021 [16:25:46] System decomposed into 1 x 2 x 2 processors for parallel execution
+05-12-2021 [16:25:46] Calculating alloy properties of system
+05-12-2021 [16:25:46] Determining atomic composition:
+05-12-2021 [16:25:46] Material 1 Co makes up 100 % of all atoms ( 504 atoms )
+05-12-2021 [16:25:46] Copying halo atoms to other processors...
+05-12-2021 [16:25:46]    Determining CPU ranges in x,y,z
+05-12-2021 [16:25:46]      Completed. Time taken: 3.0133e-05 s
+05-12-2021 [16:25:46]    Determining atoms needed by remote CPUs
+05-12-2021 [16:25:46]      Completed. Time taken: 0.000100333 s
+05-12-2021 [16:25:46]    Sharing number of atoms to be sent/received from each CPU
+05-12-2021 [16:25:46]      Completed. Time taken: 1.628e-05 s
+05-12-2021 [16:25:46]    Sending boundary atom data to all relevant CPUs
+05-12-2021 [16:25:46]      Completed. Time taken: 0.00115438 s
+05-12-2021 [16:25:46] 	done! Total time taken: 0.00141766
+05-12-2021 [16:25:46] Memory required for neighbourlist calculation (each cpu):0 MB
+05-12-2021 [16:25:46] Memory required for neighbourlist calculation (all cpus):0 MB
+05-12-2021 [16:25:46] Allocating memory for supercell array in neighbourlist calculation
+05-12-2021 [16:25:46] 	Allocating memory done
+05-12-2021 [16:25:46] Populating supercell array for neighbourlist calculation...
+05-12-2021 [16:25:46] 	Populating supercell array completed
+05-12-2021 [16:25:46] Memory required for neighbour list (each cpu):0 MB
+05-12-2021 [16:25:46] Memory required for neighbour list (all cpus):0 MB
+05-12-2021 [16:25:46] Generating neighbour list...
+05-12-2021 [16:25:46] 	Neighbour list calculation complete
+05-12-2021 [16:25:46] Deallocating supercell array for neighbour list calculation
+05-12-2021 [16:25:46] 	Supercell array deallocated
+05-12-2021 [16:25:46] Number of core  atoms: 80
+05-12-2021 [16:25:46] Number of local atoms: 140
+05-12-2021 [16:25:46] Number of total atoms: 211
+05-12-2021 [16:25:46] Initialising MPI communications...
+05-12-2021 [16:25:46] 	done! Total time taken: 3.2415e-05
+05-12-2021 [16:25:46] Copying system data to optimised data structures.
+05-12-2021 [16:25:46] Number of atoms generated on rank 0: 140
+05-12-2021 [16:25:46] Memory required for copying to performance array on rank 0: 0.032072 MB RAM
+05-12-2021 [16:25:46] Identifying surface atoms using global threshold value of 12
+05-12-2021 [16:25:46] 80 surface atoms found.
+05-12-2021 [16:25:46] Memory required for creation of 1D neighbour list on rank 0: 0.003376 MB RAM
+05-12-2021 [16:25:46] Initialising data structures for exchange calculation.
+05-12-2021 [16:25:46] Unrolled exchange template requires 0.010848MB RAM
+05-12-2021 [16:25:46] Total number of atoms (all CPUs): 504
+05-12-2021 [16:25:46] Initializing vampire modules
+05-12-2021 [16:25:46] Macrocell size = 10,10,10 Angstroms
+05-12-2021 [16:25:46] Macrocells in x,y,z: 2	2	2
+05-12-2021 [16:25:46] Total number of macrocells: 8
+05-12-2021 [16:25:46] Memory required for macrocell arrays: 0.00064 MB
+05-12-2021 [16:25:46] Number of local macrocells on rank 0: 1
+05-12-2021 [16:25:46] Initialising data structures for anisotropy calculation for 100 materials
+05-12-2021 [16:25:46] Initialising statistics module
+05-12-2021 [16:25:46] Time for initialisation: 0.008513
+05-12-2021 [16:25:46] Starting Simulation with Program Curie-Temperature...
+05-12-2021 [16:26:04] Simulation run time [s]: 18.3097
+05-12-2021 [16:26:04] Monte Carlo statistics:
+05-12-2021 [16:26:04] 	Total moves: 1.7388e+08
+05-12-2021 [16:26:04] 	53.023% Accepted
+05-12-2021 [16:26:04] 	46.977% Rejected
+05-12-2021 [16:26:04] Simulation ended gracefully.
