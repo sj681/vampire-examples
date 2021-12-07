@@ -25,7 +25,7 @@ material[1]:exchange-matrix-2nd-nn[3] = 5.1e-21
 material[1]:exchange-matrix-2nd-nn[4] = 5.1e-21
 material[1]:unit-cell-category = 1
 material[1]:host-alloy
-material[1]:alloy-fraction[5]= 0.25
+material[1]:alloy-fraction[5]= XX
 
 
 material[2]:material-name="Mn"
@@ -45,9 +45,7 @@ material[2]:exchange-matrix-2nd-nn[4] = 5.1e-21
 material[2]:unit-cell-category = 2
 material[2]:constrained = false
 material[2]:host-alloy
-material[2]:alloy-fraction[5]= 0.25
-material[2]:maximum-height = 1.0
-material[2]:minimum-height = 0.05
+material[2]:alloy-fraction[5]= XX
 
 
 material[3]:material-name="Mn"
@@ -66,7 +64,7 @@ material[3]:exchange-matrix-2nd-nn[3] = 5.1e-21
 material[3]:exchange-matrix-2nd-nn[4] = 5.1e-21
 material[3]:unit-cell-category = 3
 material[3]:host-alloy
-material[3]:alloy-fraction[5]=0.25
+material[3]:alloy-fraction[5]= XX
 
 material[4]:material-name="Mn"
 material[4]:damping-constant=0.1
@@ -84,7 +82,7 @@ material[4]:exchange-matrix-2nd-nn[3] = 5.1e-21
 material[4]:exchange-matrix-2nd-nn[4] = 5.1e-21
 material[4]:unit-cell-category = 4
 material[4]:host-alloy
-material[4]:alloy-fraction[5]=0.25
+material[4]:alloy-fraction[5]= XX
 
 
 
@@ -95,5 +93,4 @@ material[4]:alloy-fraction[5]=0.25
 #---------------------------------------------------
 
 material[5]:material-name="Ir"
-material[5]:non-magnetic=remove
-material[5]:unit-cell-category = 5
+material[5]:non-magnetic=keep

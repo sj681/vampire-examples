@@ -1,0 +1,92 @@
+07-12-2021 [15:24:22] Logfile opened
+07-12-2021 [15:24:22] Executable : vampire-parallel
+07-12-2021 [15:24:22] Host name  : Sarahs-MacBook-Pro13inch.local:
+07-12-2021 [15:24:22] Directory  : /Users/sarahjenkins/Documents/work/vampire-workshop-mainz/vampire-examples/Week_2/IrMn
+07-12-2021 [15:24:22] Process ID : 13627
+07-12-2021 [15:24:22] Version    : 6.0.0
+07-12-2021 [15:24:22] Githash    : 74f299f7e8a8a31551de2f4dbb48d0538baf8469
+07-12-2021 [15:24:22] Opening main input file "input".
+07-12-2021 [15:24:22] Parsing system parameters from main input file.
+07-12-2021 [15:24:22] Opening material file "IrMn.mat".
+07-12-2021 [15:24:22] Parsing material file for parameters.
+07-12-2021 [15:24:22] Generating neighbour interactions for a lattice of 5 x 5 x 5 unit cells for neighbour calculation
+07-12-2021 [15:24:22] Using long-ranged exchange with computed interaction shells
+07-12-2021 [15:24:22] Number of calculated interaction shells: 2
+07-12-2021 [15:24:22]    Shell 	Number 	Range 	 Cumulative
+07-12-2021 [15:24:22]      1   	12	0.707107 	12
+07-12-2021 [15:24:22]      2   	6	1 	18
+07-12-2021 [15:24:22] System decomposed into 2 x 2 x 1 processors for parallel execution
+07-12-2021 [15:24:22] Calculating alloy properties of system
+07-12-2021 [15:24:22] Determining atomic composition:
+07-12-2021 [15:24:22] Material 1 Mn makes up 0 % of all atoms ( 0 atoms )
+07-12-2021 [15:24:22] Material 2 Mn makes up 0 % of all atoms ( 0 atoms )
+07-12-2021 [15:24:22] Material 3 Mn makes up 25 % of all atoms ( 512 atoms )
+07-12-2021 [15:24:22] Material 4 Mn makes up 25 % of all atoms ( 512 atoms )
+07-12-2021 [15:24:22] Material 5 Ir makes up 50 % of all atoms ( 1024 atoms )
+07-12-2021 [15:24:22] Copying halo atoms to other processors...
+07-12-2021 [15:24:22]    Determining CPU ranges in x,y,z
+07-12-2021 [15:24:22]      Completed. Time taken: 2.4006e-05 s
+07-12-2021 [15:24:22]    Determining atoms needed by remote CPUs
+07-12-2021 [15:24:22]      Completed. Time taken: 0.00390743 s
+07-12-2021 [15:24:22]    Sharing number of atoms to be sent/received from each CPU
+07-12-2021 [15:24:22]      Completed. Time taken: 1.057e-05 s
+07-12-2021 [15:24:22]    Sending boundary atom data to all relevant CPUs
+07-12-2021 [15:24:22]      Completed. Time taken: 0.00330049 s
+07-12-2021 [15:24:22] 	done! Total time taken: 0.00750262
+07-12-2021 [15:24:22] Memory required for neighbourlist calculation (each cpu):0 MB
+07-12-2021 [15:24:22] Memory required for neighbourlist calculation (all cpus):0 MB
+07-12-2021 [15:24:22] Allocating memory for supercell array in neighbourlist calculation
+07-12-2021 [15:24:22] 	Allocating memory done
+07-12-2021 [15:24:22] Populating supercell array for neighbourlist calculation...
+07-12-2021 [15:24:22] 	Populating supercell array completed
+07-12-2021 [15:24:22] Memory required for neighbour list (each cpu):0 MB
+07-12-2021 [15:24:22] Memory required for neighbour list (all cpus):0 MB
+07-12-2021 [15:24:22] Generating neighbour list...
+07-12-2021 [15:24:22] 	Neighbour list calculation complete
+07-12-2021 [15:24:22] Deallocating supercell array for neighbour list calculation
+07-12-2021 [15:24:22] 	Supercell array deallocated
+07-12-2021 [15:24:22] Number of core  atoms: 96
+07-12-2021 [15:24:22] Number of local atoms: 512
+07-12-2021 [15:24:22] Number of total atoms: 1216
+07-12-2021 [15:24:22] Initialising MPI communications...
+07-12-2021 [15:24:22] 	done! Total time taken: 0.000272124
+07-12-2021 [15:24:22] Copying system data to optimised data structures.
+07-12-2021 [15:24:22] Number of atoms generated on rank 0: 512
+07-12-2021 [15:24:22] Memory required for copying to performance array on rank 0: 0.184832 MB RAM
+07-12-2021 [15:24:22] Identifying surface atoms using global threshold value of 20
+07-12-2021 [15:24:22] 512 surface atoms found.
+07-12-2021 [15:24:22] Using Néel pair anisotropy for atoms with < threshold number of neighbours.
+07-12-2021 [15:24:22] Memory required for creation of 1D neighbour list on rank 0: 0.019456 MB RAM
+07-12-2021 [15:24:22] Initialising data structures for exchange calculation.
+07-12-2021 [15:24:22] Unrolled exchange template requires 0.073728MB RAM
+07-12-2021 [15:24:22] Total number of atoms (all CPUs): 2048
+07-12-2021 [15:24:22] Initializing vampire modules
+07-12-2021 [15:24:22] Macrocell size = 10,10,10 Angstroms
+07-12-2021 [15:24:22] Macrocells in x,y,z: 4	4	4
+07-12-2021 [15:24:22] Total number of macrocells: 64
+07-12-2021 [15:24:22] Memory required for macrocell arrays: 0.00512 MB
+07-12-2021 [15:24:22] Number of local macrocells on rank 0: 12
+07-12-2021 [15:24:22] Initialising data structures for anisotropy calculation for 100 materials
+07-12-2021 [15:24:22] Initialising statistics module
+07-12-2021 [15:24:22] Time for initialisation: 0.016852
+07-12-2021 [15:24:22] Starting Simulation with Program Field-Cool...
+07-12-2021 [15:24:22] Initialising configuration output... done!
+07-12-2021 [15:24:22] Total coordinate data filesize: 0.098304 MB
+07-12-2021 [15:24:22] Total spin data filesize (per snapshot): 0.049152 MB
+07-12-2021 [15:24:22] Outputting atomic coordinate file to disk 0.0416471 GB/s in 0.00236041 s
+07-12-2021 [15:24:22] Outputting configuration file 00000000 to disk 0.0272068 GB/s in 0.00180661 s [ 0.00220209 s]
+07-12-2021 [15:24:40] Outputting configuration file 00000001 to disk 0.0267865 GB/s in 0.00183496 s [ 0.0025159 s]
+07-12-2021 [15:24:59] Outputting configuration file 00000002 to disk 0.0263939 GB/s in 0.00186225 s [ 0.00241771 s]
+07-12-2021 [15:25:19] Outputting configuration file 00000003 to disk 0.0270123 GB/s in 0.00181962 s [ 0.00231584 s]
+07-12-2021 [15:25:40] Outputting configuration file 00000004 to disk 0.0180174 GB/s in 0.00272802 s [ 0.00326827 s]
+07-12-2021 [15:25:59] Outputting configuration file 00000005 to disk 0.0137795 GB/s in 0.00356705 s [ 0.00422836 s]
+07-12-2021 [15:26:19] Outputting configuration file 00000006 to disk 0.0254878 GB/s in 0.00192845 s [ 0.00257548 s]
+07-12-2021 [15:26:42] Outputting configuration file 00000007 to disk 0.022814 GB/s in 0.00215446 s [ 0.00278023 s]
+07-12-2021 [15:27:03] Outputting configuration file 00000008 to disk 0.0125821 GB/s in 0.0039065 s [ 0.004723 s]
+07-12-2021 [15:27:24] Outputting configuration file 00000009 to disk 0.0271422 GB/s in 0.00181091 s [ 0.00243691 s]
+07-12-2021 [15:27:43] Simulation run time [s]: 200.951
+07-12-2021 [15:27:43] Monte Carlo statistics:
+07-12-2021 [15:27:43] 	Total moves: 2.048e+09
+07-12-2021 [15:27:43] 	65.3762% Accepted
+07-12-2021 [15:27:43] 	34.6238% Rejected
+07-12-2021 [15:27:43] Simulation ended gracefully.

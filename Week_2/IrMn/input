@@ -1,0 +1,71 @@
+#------------------------------------------
+# Sample vampire input file to perform
+# a Curie temperature simulation for IrMn.
+# Provided as part of the INSPIRE group
+# Taken from https://vampire.york.ac.uk/workshop/
+# VAMPIRE workshop.
+#
+# Dr. Sarah Jenkins
+# TWIST Group, University Duisburg-Essen
+#
+# Tobias Wagner
+# INSPIRE Group, University Mainz
+#
+# November 2021
+#------------------------------------------
+
+#------------------------------------------
+# Creation attributes:
+#------------------------------------------
+create:crystal-structure=fcc
+dimensions:unit-cell-size = 3.785 !A
+create:crystal-sublattice-materials
+
+exchange:interaction-range= 1.5
+exchange:function = shell
+
+anisotropy:enable-bulk-neel-anisotropy
+anisotropy:surface-anisotropy-threshold = 20
+anisotropy:surface-anisotropy-nearest-neighbour-range = 0.4 !nm
+
+create:periodic-boundaries-x
+create:periodic-boundaries-y
+create:periodic-boundaries-z
+#------------------------------------------
+# System Dimensions:
+#------------------------------------------
+
+dimensions:system-size-x = 2.0 !nm
+dimensions:system-size-y = 2.0 !nm
+dimensions:system-size-z = 2.0 !nm
+
+#------------------------------------------
+# Material Files:
+#------------------------------------------
+material:file=IrMn.mat
+
+#------------------------------------------
+# Simulation attributes:
+#------------------------------------------
+
+sim:minimum-temperature=0
+sim:maximum-temperature=1500
+sim:total-time-steps=1000000
+sim:cooling-time = 1 !ns
+sim:cooling-function = linear
+#------------------------------------------
+# Program and integrator details
+#------------------------------------------
+sim:program=field-cool
+sim:integrator=monte-carlo
+#------------------------------------------
+# data output
+#------------------------------------------
+output:time-steps
+output:temperature
+output:material-magnetisation
+screen:temperature
+screen:material-magnetisation
+
+config:atoms
+config:atoms-output-rate = 100

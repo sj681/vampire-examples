@@ -1,6 +1,6 @@
 #------------------------------------------
 # Sample vampire input file to perform
-# a Curie temperature simulation for Ni.
+# a Curie temperature simulation for IrMn.
 # Provided as part of the INSPIRE group
 # Taken from https://vampire.york.ac.uk/workshop/
 # VAMPIRE workshop.
@@ -18,10 +18,10 @@
 # Creation attributes:
 #------------------------------------------
 create:crystal-structure=fcc
-dimensions:unit-cell-size = 2.507 !A
+dimensions:unit-cell-size = 3.785 !A
 create:crystal-sublattice-materials
 
-exchange:interaction-range= 1.5
+exchange:interaction-range= 1.1
 exchange:function = shell
 
 anisotropy:enable-bulk-neel-anisotropy
@@ -66,3 +66,6 @@ output:temperature
 output:material-magnetisation
 screen:temperature
 screen:material-magnetisation
+
+config:atoms
+config:atoms-output-rate = 100
