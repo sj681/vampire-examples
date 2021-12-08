@@ -1,0 +1,63 @@
+#------------------------------------------
+# Sample vampire input file to perform
+# benchmark calculation for v5.0
+#
+#------------------------------------------
+
+#------------------------------------------
+# Creation attributes:
+#------------------------------------------
+create:crystal-structure=sc
+
+create:periodic-boundaries-x
+create:periodic-boundaries-y
+#------------------------------------------
+# System Dimensions:
+#------------------------------------------
+dimensions:unit-cell-size = 5 !A
+dimensions:system-size-x = 10 !nm
+dimensions:system-size-y = 10 !nm
+dimensions:system-size-z = 0.9 !nm
+
+#------------------------------------------
+# Material Files:
+#------------------------------------------
+material:file=Ni.mat
+
+
+exchange:dmi-cutoff-range = 7.1 !A # sc
+
+# Simulation attributes:
+#------------------------------------------
+sim:total-time-steps=3000000
+sim:time-step=1e-16
+
+
+sim:minimum-temperature=0
+sim:maximum-temperature=30.0
+sim:applied-field-strength=4.0
+sim:cooling-time=100!ps
+sim:cooling-function = gaussian
+#------------------------------------------
+# Program and integrator details
+#------------------------------------------
+
+sim:program=field-cool
+sim:integrator=llg-heun
+
+#------------------------------------------
+# data output
+#------------------------------------------
+output:real-time
+output:temperature
+output:material-magnetisation
+output:mean-magnetisation-length
+
+
+config:atoms
+config:atoms-output-rate=100
+
+screen:real-time
+screen:temperature
+screen:material-magnetisation
+

@@ -1,0 +1,65 @@
+#------------------------------------------
+# Sample vampire input file to perform
+# a DW simulation for Ni.
+# Provided as part of the INSPIRE group
+# VAMPIRE workshop.
+#
+# Dr. Sarah Jenkins
+# TWIST Group, University Duisburg-Essen
+#
+# Tobias Wagner
+# INSPIRE Group, University Mainz
+#
+# November 2021
+#------------------------------------------
+
+#------------------------------------------
+# Creation attributes:
+#------------------------------------------
+create:crystal-structure=fcc
+create:periodic-boundaries-y
+create:periodic-boundaries-z
+#------------------------------------------
+# System Dimensions:
+#------------------------------------------
+dimensions:unit-cell-size = 3.524 !A
+dimensions:system-size-x = 40.0 !nm
+dimensions:system-size-y = 1.0 !nm
+dimensions:system-size-z = 1.0 !nm
+sim:save-checkpoint=end
+sim:load-checkpoint=restart
+#------------------------------------------
+# Material Files:
+#------------------------------------------
+material:file=Ni.mat
+
+#------------------------------------------
+# Simulation attributes:
+#------------------------------------------
+sim:program=domain-wall
+sim:domain-wall-axis = x
+sim:domain-wall-position = 0.5
+
+sim:applied-field-strength = 1 !T
+sim:applied-field-unit-vector = 0,0,1
+sim:temperature=0.0
+sim:total-time-steps = 100000
+#------------------------------------------
+# Program and integrator details
+#------------------------------------------
+sim:integrator=llg-heun
+
+#------------------------------------------
+# data output
+#------------------------------------------
+config:atoms
+config:atoms-output-rate=100
+
+
+output:time-steps
+output:temperature
+output:magnetisation
+output:material-magnetisation
+
+screen:time-steps
+screen:material-magnetisation
