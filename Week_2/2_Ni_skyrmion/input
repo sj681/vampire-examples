@@ -15,9 +15,9 @@ create:periodic-boundaries-y
 # System Dimensions:
 #------------------------------------------
 dimensions:unit-cell-size = 5 !A
-dimensions:system-size-x = 10 !nm
-dimensions:system-size-y = 10 !nm
-dimensions:system-size-z = 0.9 !nm
+dimensions:system-size-x = XX !nm
+dimensions:system-size-y = XX !nm
+dimensions:system-size-z = XX !nm
 
 #------------------------------------------
 # Material Files:
@@ -25,7 +25,7 @@ dimensions:system-size-z = 0.9 !nm
 material:file=Ni.mat
 
 
-exchange:dmi-cutoff-range = 7.1 !A # sc
+exchange:dmi-cutoff-range = XX !A # sc
 
 # Simulation attributes:
 #------------------------------------------
