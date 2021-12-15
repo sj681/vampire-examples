@@ -21,7 +21,7 @@ create:crystal-structure=fcc
 dimensions:unit-cell-size = 3.785 !A
 create:crystal-sublattice-materials
 
-exchange:interaction-range= 1.1
+exchange:interaction-range= 1.5
 exchange:function = shell
 
 anisotropy:enable-bulk-neel-anisotropy
@@ -50,13 +50,11 @@ material:file=IrMn.mat
 
 sim:minimum-temperature=0
 sim:maximum-temperature=1500
-sim:total-time-steps=1000000
-sim:cooling-time = 1 !ns
-sim:cooling-function = linear
+sim:loop-time-steps=5000
 #------------------------------------------
 # Program and integrator details
 #------------------------------------------
-sim:program=field-cool
+sim:program=curie-temperature
 sim:integrator=monte-carlo
 #------------------------------------------
 # data output
@@ -68,4 +66,4 @@ screen:temperature
 screen:material-magnetisation
 
 config:atoms
-config:atoms-output-rate = 100
+config:atoms-output-rate = 10

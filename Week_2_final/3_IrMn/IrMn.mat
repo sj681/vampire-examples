@@ -1,4 +1,17 @@
-
+#------------------------------------------
+# Sample vampire input file to perform
+# a Curie temperature simulation for IrMn.
+# Provided as part of the INSPIRE group
+# Taken from https://vampire.york.ac.uk/workshop/
+# VAMPIRE workshop.
+#
+# Dr. Sarah Jenkins
+# TWIST Group, University Duisburg-Essen
+#
+# Tobias Wagner
+# INSPIRE Group, University Mainz
+#
+# November 2021
 #---------------------------------------------------
 # Number of Materials
 #---------------------------------------------------
